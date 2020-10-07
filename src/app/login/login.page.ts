@@ -29,6 +29,7 @@ export class LoginPage implements OnInit {
 
   autenticar() {
 
+    
     let user = this.formGroup.controls['username'].value;
     let pass = this.formGroup.controls['password'].value;
 
