@@ -30,6 +30,18 @@ const routes: Routes = [
   {
     path: 'sair',
     loadChildren: () => import('./sair/sair.module').then( m => m.SairPageModule)
+  },
+  {
+    path: 'clientes-visualizar/:id',
+    loadChildren: () => import('./clientes-visualizar/clientes-visualizar.module').then( m => m.ClientesVisualizarPageModule)
+  },
+  {
+    path: 'cliente-atualizar/:id',
+    loadChildren: () => import('./cliente-atualizar/cliente-atualizar.module').then( m => m.ClienteAtualizarPageModule)
+  },
+  {
+    path: 'cliente-excluir/:id',
+    loadChildren: () => import('./cliente-excluir/cliente-excluir.module').then( m => m.ClienteExcluirPageModule)
   }
 ];
 
